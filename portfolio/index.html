@@ -1,0 +1,359 @@
+<!--
+  Portfolio generated from your resume file: YASH RAJPUROHIT.pdf
+  Source: :contentReference[oaicite:0]{index=0}
+
+  Instructions:
+  - Save this HTML file in the same folder as:
+      * YASH RAJPUROHIT.pdf        (resume PDF)
+      * 762f4126-d8c1-4986-b930-d5408d5bc246.png  (3D cartoon image)
+  - Open the HTML file in any browser. It is fully responsive (mobile / tablet / desktop).
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yash Rajpurohit — Portfolio</title>
+  <style>
+    :root{
+      --bg: #2f3033;        /* grey background */
+      --card: #0b0b0b;      /* specific "batch black" */
+      --muted: #bdbdbd;
+      --accent: #00bcd4;
+      --white: #ffffff;
+      --glass: rgba(255,255,255,0.03);
+      --maxw: 1100px;
+    }
+
+    /* Reset & base */
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;padding:0;background:var(--bg);color:var(--white);font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;-webkit-font-smoothing:antialiased;}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* Layout container */
+    .wrap{max-width:var(--maxw);margin:20px auto;padding:18px;}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{
+      width:64px;height:64px;border-radius:12px;overflow:hidden;
+      background:linear-gradient(135deg, rgba(255,255,255,0.02), rgba(0,0,0,0.1));
+      border:1px solid rgba(255,255,255,0.03);
+      box-shadow:0 6px 20px rgba(0,0,0,0.6);
+      flex-shrink:0;
+    }
+    .logo img{width:100%;height:100%;object-fit:cover;display:block}
+    
+    .brand-info{line-height:1}
+    .brand-info .name{font-weight:800;letter-spacing:0.4px}
+    .brand-info .role{color:var(--muted);font-size:13px;margin-top:4px}
+
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{font-weight:600;font-size:14px;color:var(--white);opacity:0.95}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:22px;padding:20px;border-radius:12px;background:var(--glass);border:1px solid rgba(255,255,255,0.03);box-shadow:0 14px 40px rgba(0,0,0,0.55)}
+    .hero-left h1{font-size:28px;margin:0 0 8px}
+    .subtitle{color:var(--muted);margin-bottom:14px}
+    .desc{color:var(--muted);max-width:65ch;margin-bottom:12px}
+
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .btn{padding:10px 14px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white);font-weight:700;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#041014;border:none}
+
+    .hero-right{display:flex;align-items:center;justify-content:center}
+    .avatar-card{width:320px;height:320px;border-radius:18px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.08));display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.04);box-shadow:0 18px 40px rgba(0,0,0,0.55)}
+    .avatar-card img{width:92%;height:92%;object-fit:cover;border-radius:12px}
+
+    /* Main layout */
+    main{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+    h2{margin:0 0 12px;font-size:18px}
+    .muted{color:var(--muted);font-size:13px}
+
+    /* Skills */
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:8px;font-weight:700;font-size:13px}
+
+    /* Projects */
+    .projects-list{display:flex;flex-direction:column;gap:12px}
+    .project{padding:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+    .project .meta{color:var(--muted);font-size:13px;margin-top:6px}
+    .project a{font-weight:800;color:var(--accent)}
+
+    /* Education / Contact */
+    .edu-item{margin-bottom:10px}
+    .contact-row{display:flex;flex-direction:column;gap:8px}
+    .socials{display:flex;gap:8px;flex-wrap:wrap}
+
+    /* Certifications list */
+    .certs-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .certs-list a{display:block;color:var(--accent);font-weight:600}
+
+    /* Footer */
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:1024px){
+      .hero{grid-template-columns:1fr 300px}
+      main{grid-template-columns:1fr 320px}
+      .avatar-card{width:280px;height:280px}
+    }
+    @media (max-width:820px){
+      header{flex-direction:column;align-items:flex-start;gap:12px}
+      nav{order:2;width:100%;overflow-x:auto;padding-bottom:6px}
+      nav a{white-space:nowrap}
+      .hero{grid-template-columns:1fr;align-items:center}
+      .hero-right{order:2}
+      main{grid-template-columns:1fr}
+    }
+    @media (max-width:420px){
+      .logo{width:52px;height:52px}
+      .hero-left h1{font-size:22px}
+      .avatar-card{width:220px;height:220px}
+    }
+
+    /* Minor interactive touches */
+    .project:hover{transform:translateY(-3px);transition:all .18s ease}
+    .btn:active{transform:translateY(1px)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <header>
+      <div class="brand" aria-label="brand">
+        <div class="logo">
+          <!-- local 3D cartoon image (replace file if needed) -->
+          <img src="Screenshot 2025-08-11 103033.png" alt="3D cartoon avatar of Yash">
+        </div>
+        <div class="brand-info">
+          <div class="name">YASH RAJPUROHIT</div>
+          <div class="role">MCA Student • Web & Data Enthusiast</div>
+        </div>
+      </div>
+
+      <nav aria-label="main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-left">
+        <h1 id="hero-title">Hi — I'm Yash</h1>
+        <div class="subtitle">MCA student passionate about Web Development, Data Science & Machine Learning</div>
+
+        <p class="desc">I build full-stack web apps and data-driven solutions including an Event Management System (Java/JSP), Mood-Based Song Recommendation (Python/Flask), Library Management System, and a Stock Market Prediction System using ML. I am skilled in Python, Java, C++, Web technologies and databases.</p>
+
+        <div class="cta-row" role="group" aria-label="call to action">
+          <a href="#projects" class="btn">See Projects</a>
+          <a href="YASH RAJPUROHIT.pdf" download class="btn btn-primary">Download Resume (PDF)</a>
+          <a href="mailto:theyashraj06@gmail.com" class="btn">Mail Me</a>
+        </div>
+
+        <div style="margin-top:12px" class="muted">Quick links</div>
+        <div class="socials" style="margin-top:8px">
+          <a href="https://www.linkedin.com/in/yash-rajpurohit-71825a200" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/Yashr90" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="https://www.hackerrank.com/profile/yashrajshivtala1" target="_blank" rel="noopener">HackerRank</a> ·
+          <a href="https://leetcode.com/u/Yashhr90/" target="_blank" rel="noopener">LeetCode</a>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="true">
+        <div class="avatar-card">
+          <!-- same 3D image shown larger -->
+          <img src="Screenshot 2025-08-11 103033.png" alt="3D cartoon avatar">
+        </div>
+      </div>
+    </section>
+
+    <!-- Main content -->
+    <main>
+      <!-- Left column: About, Projects, Certifications -->
+      <div>
+        <section id="about" class="card" aria-labelledby="about-title">
+          <h2 id="about-title">About</h2>
+          <p class="muted">MCA candidate at Alliance University, Bangalore (2025). Comfortable with web frontends (HTML/CSS/JS), backend using Flask/Java, and working with databases (MySQL/SQL).</p>
+
+          <div style="margin-top:12px">
+            <h3 style="margin:8px 0">Technical Skills</h3>
+            <div class="skills" aria-label="technical skills">
+              <div class="skill">Python</div>
+              <div class="skill">Java</div>
+              <div class="skill">C++</div>
+              <div class="skill">HTML / CSS / JavaScript</div>
+              <div class="skill">MySQL / SQL</div>
+              <div class="skill">Pandas • NumPy • Scikit-Learn</div>
+              <div class="skill">Matplotlib • Seaborn</div>
+              <div class="skill">Excel • VS Code • Colab • Figma</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="card" style="margin-top:14px" aria-labelledby="projects-title">
+          <h2 id="projects-title">Project Showcase</h2>
+          <div class="projects-list">
+            <div class="project" aria-labelledby="p1">
+              <div style="display:flex;justify-content:space-between;align-items:start;gap:8px">
+                <div>
+                  <div id="p1" style="font-weight:800">Event Management System</div>
+                  <div class="muted">Java with JSP & XML backend · HTML/CSS/JS frontend</div>
+                </div>
+                <div><a href="https://github.com/Yashr90/Event-management-system.git" target="_blank" rel="noopener">Repo ↗</a></div>
+              </div>
+              <div class="meta">Manages event registration and bookings. (Repo link)</div>
+            </div>
+
+            <div class="project" aria-labelledby="p2">
+              <div style="display:flex;justify-content:space-between;align-items:start;gap:8px">
+                <div>
+                  <div id="p2" style="font-weight:800">Mood-Based Song Recommendation System</div>
+                  <div class="muted">Python Flask backend · Responsive frontend</div>
+                </div>
+                <div><a href="https://github.com/Yashr90/mood-based-music-reccemondation.git" target="_blank" rel="noopener">Repo ↗</a></div>
+              </div>
+              <div class="meta">Suggests songs based on user's mood analysis.</div>
+            </div>
+
+            <div class="project" aria-labelledby="p3">
+              <div style="display:flex;justify-content:space-between;align-items:start;gap:8px">
+                <div>
+                  <div id="p3" style="font-weight:800">Library Management System</div>
+                  <div class="muted">Inventory automation, user & issue/return management</div>
+                </div>
+                <div><a href="https://github.com/Yashr90/library-management-system.git" target="_blank" rel="noopener">Repo ↗</a></div>
+              </div>
+              <div class="meta">Automates book inventory and issuance processes.</div>
+            </div>
+
+            <div class="project" aria-labelledby="p4">
+              <div style="display:flex;justify-content:space-between;align-items:start;gap:8px">
+                <div>
+                  <div id="p4" style="font-weight:800">Stock Market Prediction System</div>
+                  <div class="muted">Python ML models + Flask frontend</div>
+                </div>
+                <div><a href="https://github.com/Yashr90/stock-market-prediction-.git" target="_blank" rel="noopener">Repo ↗</a></div>
+              </div>
+              <div class="meta">Forecasts stock prices using historical data and ML algorithms.</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="certs" class="card" style="margin-top:14px" aria-labelledby="certs-title">
+          <h2 id="certs-title">Certifications & Courses</h2>
+          <div class="muted" style="margin-bottom:8px">Selected certificates (2025):</div>
+          <div class="certs-list">
+            <div>
+              <div><strong>Python for Data Science, AI & Development</strong> — IBM</div>
+              <a href="https://coursera.org/share/6132bfcc80375dbf22ba8526d984518a" target="_blank" rel="noopener">Coursera Badge</a>
+            </div>
+            <div>
+              <div><strong>HTML, CSS, and Javascript for Web Developers</strong> — Johns Hopkins University</div>
+              <a href="https://coursera.org/share/36b6427802bb555d0cdf3cc103655331" target="_blank" rel="noopener">Certificate</a>
+            </div>
+            <div>
+              <div><strong>Introduction to Databases</strong> — Meta</div>
+              <a href="https://coursera.org/share/fdea0ddc7b56b6e78c63733434f2fa68" target="_blank" rel="noopener">Certificate</a>
+            </div>
+            <div>
+              <div><strong>Machine Learning: Classification</strong> — Univ. of Washington</div>
+              <a href="https://coursera.org/share/948fac17b74c4f2cd519ec69ef54f583" target="_blank" rel="noopener">Certificate</a>
+            </div>
+            <div>
+              <div><strong>Data Analysis with R</strong> — IBM</div>
+              <a href="https://coursera.org/share/a7f5978ed8dd77ab46751b153698921d" target="_blank" rel="noopener">Certificate</a>
+            </div>
+            <div>
+              <div><strong>Python Project for Data Science</strong> — IBM</div>
+              <a href="https://coursera.org/share/831c4487ac59db63fbac4eb0597fe2fc" target="_blank" rel="noopener">Certificate</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right column: Education, Contact, Workshops -->
+      <aside>
+        <section id="education" class="card" aria-labelledby="edu-title">
+          <h2 id="edu-title">Education</h2>
+          <div class="edu-item">
+            <div style="font-weight:700">Master's Degree — Alliance University, Bangalore, Karnataka</div>
+            <div class="muted">2025 • Sem 1 SGPA: 8.4 • Sem 2 SGPA: 8.3</div>
+          </div>
+
+          <div class="edu-item">
+            <div style="font-weight:700">Bachelor's Degree — Lachoo Memorial College, Jodhpur</div>
+            <div class="muted">2024 • CGPA: 7.9</div>
+          </div>
+
+          <div class="edu-item">
+            <div style="font-weight:700">HSC — Vivek School, Bali (Rajasthan)</div>
+            <div class="muted">2020 • 71.60%</div>
+          </div>
+
+          <div class="edu-item">
+            <div style="font-weight:700">SSLC — Vivek School, Bali (Rajasthan)</div>
+            <div class="muted">2019 • 64.50%</div>
+          </div>
+        </section>
+
+        <section id="contact" class="card" style="margin-top:14px" aria-labelledby="contact-title">
+          <h2 id="contact-title">Contact</h2>
+          <div class="contact-row">
+            <div><strong>Email</strong><br><a href="mailto:theyashraj06@gmail.com">theyashraj06@gmail.com</a></div>
+            <div><strong>College Email</strong><br><a href="mailto:ryashMCA24@ced.alliance.edu.in">ryashMCA24@ced.alliance.edu.in</a></div>
+            <div><strong>Phone</strong><br><a href="tel:+918302366862">+91 83023 66862</a></div>
+          </div>
+
+          <div style="margin-top:10px" class="muted">Profiles</div>
+          <div style="margin-top:8px;display:flex;flex-direction:column;gap:6px">
+            <a href="https://www.linkedin.com/in/yash-rajpurohit-71825a200" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/Yashr90" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.hackerrank.com/profile/yashrajshivtala1" target="_blank" rel="noopener">HackerRank</a>
+            <a href="https://leetcode.com/u/Yashhr90/" target="_blank" rel="noopener">LeetCode</a>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px" aria-labelledby="workshops-title">
+          <h2 id="workshops-title">Workshops & Industrial Visit</h2>
+          <div class="muted">Industrial visit: CloudSEK — attended workshops & seminars related to AI-powered cybersecurity and threat prevention.</div>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      Built with care • © <span id="year"></span> Yash Rajpurohit
+    </footer>
+  </div>
+
+  <!-- Minimal JS: dynamic year, ensure external links are safe -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Ensure safe rel for blank-target links
+    document.querySelectorAll('a[target="_blank"]').forEach(a=>{
+      a.setAttribute('rel','noopener noreferrer');
+    });
+
+    // Smooth scrolling for in-page nav
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target = this.getAttribute('href');
+        if(target.length>1){
+          e.preventDefault();
+          const el = document.querySelector(target);
+          if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
