@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yash Rajpurohit Frontend Developer Portfolio" />
+  <title>Yash Rajpurohit | Frontend Developer</title>
+  
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container" aria-label="Primary Navigation">
+      <h1 class="logo">Yash<span>.</span></h1>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn-primary">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section id="hero" class="hero section container">
+      <div class="hero-content fade-in-up">
+        <span class="greeting">Hello, I'm</span>
+        <h1 class="hero-title">Yash Rajpurohit</h1>
+        <p class="hero-subtitle">Frontend Developer & AI Enthusiast</p>
+        <p class="hero-description">
+          Building responsive, pixel-perfect web experiences with a touch of modern design. 
+          Bridging the gap between traditional development and AI solutions.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+          <a href="YashRaj Resume.pdf" class="btn btn-outline" download>
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </div>
+      </div>
+ 
+      <div class="hero-visual">
+          <div class="blob blob-1"></div>
+          <div class="blob blob-2"></div>
+      </div>
+    </section>
+
+    
+    <section id="about" class="about section container">
+      <h2 class="section-title fade-in">About Me</h2>
+      <div class="about-content fade-in">
+        <p>
+          I am a passionate <strong>Frontend and Web Developer</strong> with a strong foundation in AI/ML exposure. 
+          Currently pursuing my MCA in Generative AI at Alliance University. I specialize in building 
+          clean, efficient, and accessible web applications using <strong>React, Python, and modern web technologies</strong>.
+        </p>
+        <p>
+          My goal is to leverage my skills to build real-world solutions that solve meaningful problems.
+        </p>
+      </div>
+    </section>
+
+    
+    <section id="skills" class="skills section container">
+      <h2 class="section-title fade-in">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category fade-in">
+          <h3><i class="fas fa-code"></i> Languages & Web</h3>
+          <div class="tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Tailwind</span>
+            <span>Python</span>
+            <span>C++</span>
+            <span>Git</span>
+          </div>
+        </div>
+
+        <div class="skill-category fade-in">
+          <h3><i class="fas fa-brain"></i> AI/ML & NLP</h3>
+          <div class="tags">
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>LLMs</span>
+            <span>TensorFlow</span>
+            <span>Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="skill-category fade-in">
+          <h3><i class="fas fa-tools"></i> Tools</h3>
+          <div class="tags">
+            <span>VS Code</span>
+            <span>Figma</span>
+            <span>Google Colab</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="projects" class="projects section container">
+      <h2 class="section-title fade-in">Featured Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card fade-in">
+          <div class="project-icon">
+            <i class="fas fa-play-circle"></i>
+          </div>
+          <div class="project-content">
+            <h3>Netflix-Style Streaming UI</h3>
+            <p>
+              Designed a responsive Netflix-style UI using Figma and React. 
+              Features include browsing, search functionality, watchlist management, 
+              and a custom media player interface.
+            </p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Figma</span>
+              <span>CSS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="project-content">
+            <h3>Modern Landing Template</h3>
+            <p>
+              Built reusable, high-performance frontend templates using HTML, CSS, JavaScript, 
+              and React. Focus on modularity, responsiveness, and accessibility.
+            </p>
+            <div class="project-tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="project-content">
+            <h3>Recommendation System</h3>
+            <p>
+              Developed a sentiment-based recommendation system using TF-IDF and K-Means clustering. 
+              Successfully improved user satisfaction metrics by 12%.
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>ML</span>
+              <span>K-Means</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-icon">
+            <i class="fas fa-ship"></i>
+          </div>
+          <div class="project-content">
+            <h3>Titanic Survival Prediction</h3>
+            <p>
+              Implemented a Random Forest classification model with extensive feature engineering, 
+              achieving 92% prediction accuracy on the test dataset.
+            </p>
+             <div class="project-tags">
+              <span>Python</span>
+              <span>Scikit-learn</span>
+              <span>Data Science</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="education section container">
+        <h2 class="section-title fade-in">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <h3>MCA (Generative AI)</h3>
+                    <span class="institution">Alliance University, Bengaluru</span>
+                    <span class="year">Expected 2026</span>
+                    <span class="score">CGPA: 8.4</span>
+                </div>
+            </div>
+            <div class="timeline-item fade-in">
+                <div class="timeline-content">
+                    <h3>BCA</h3>
+                    <span class="institution">Jai Narain Vyas University, Jodhpur</span>
+                    <span class="year">Completed 2024</span>
+                    <span class="score">78%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact section container">
+      <h2 class="section-title fade-in">Get In Touch</h2>
+      <p class="contact-subtitle fade-in">Feel free to reach out for collaborations or just a friendly hello!</p>
+      
+      <div class="contact-grid">
+        <a href="mailto:rajpurohityash902@gmail.com" class="contact-card fade-in">
+          <i class="fas fa-envelope"></i>
+          <span>Email Me</span>
+          <small>rajpurohityash902@gmail.com</small>
+        </a>
+
+        <a href="tel:+918302366862" class="contact-card fade-in">
+          <i class="fas fa-phone"></i>
+          <span>Call Me</span>
+          <small>+91 8302366862</small>
+        </a>
+
+        <a href="https://github.com/Yashr90" target="_blank" rel="noopener" class="contact-card fade-in">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+          <small>View Profile</small>
+        </a>
+
+        <a href="https://linkedin.com/in/yash-rajpurohit-71825a200/" target="_blank" rel="noopener" class="contact-card fade-in">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+          <small>Connect with me</small>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+        <p> Built with Code.</p>
+    </div>
+  </footer>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
